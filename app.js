@@ -85,3 +85,49 @@ console.log(5 === "5"); // false (strict equality)
 
 // Short circuiting
 let shortCircuitExample = true || console.log("This won't be logged");
+
+// JavaScript Objects
+
+// Objects can be created using object literals:
+
+let myObject = {};
+
+// Adding or Modifying Properties:
+// You can add or modify properties of an object using dot notation or square bracket notation:
+
+myObject.property = 'some value'; // Dot notation
+myObject['anotherProperty'] = 42; // Square bracket notation
+
+// Accessing Properties:
+// You can access the values of properties using dot notation or square bracket notation:
+
+let value = myObject.property; // Dot notation
+let anotherValue = myObject['anotherProperty']; // Square bracket notation
+
+// Deleting Properties:
+// The delete keyword can be used to remove a property from an object:
+
+delete myObject.property;
+
+// Checking if a Property Exists:
+// You can check if an object has a specific property using the in operator or the hasOwnProperty method:
+
+if ('property' in myObject) {
+  // property exists
+}
+
+if (myObject.hasOwnProperty('property')) {
+  // property exists
+}
+
+// Enumerating Properties:
+// You can loop through all the properties of an object using for...in loop or Object.keys, Object.values, or Object.entries methods:
+
+for (let key in myObject) {
+  console.log(key, myObject[key]);
+}
+
+// or using Object.keys
+Object.keys(myObject).forEach(key => {
+  console.log(key, myObject[key]);
+});
